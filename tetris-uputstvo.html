@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="skripta.js"></script>
+</head>
+<body  class="bg-secondary bg-gradient">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid justify-content-center">
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="tetris-igra.html" class="nav-link">IGRA</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar-brand" style="padding-left: 20px;">
+                        <img src="assets/logo.png" alt="" width="80px">
+                    </a>
+                </li>
+
+
+
+
+                <li class="nav-item">
+                    <a href="tetris-rezultati.html" class="nav-link">REZULTATI</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container text-center bg-secondary bg-gradient">
+        <div class="container text-center ">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <div class="card bg-secondary bg-gradient">
+                    <div class="card-body">
+                        <h1>Uputstvo za igru</h1>
+                        <ul style="text-align: left">
+                            <li>
+                                Kontrole:
+                                <ul>
+                                    <li>Left arrow - pomeranje ulevo</li>
+                                    <li>Right arrow - pomeranje udesno</li>
+                                    <li>Down arrow - spustiti blok nadole</li>
+                                    <li>Up arrow - rotiranje blokova</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Svaki sastavljeni horizontalni red - 100 poena 
+                            </li>
+
+                            <li>
+                                Igra se završava kada se blokovi nagomilaju do vrha
+                            </li>
+
+                            <li>
+                                Težina igre zadaje početnu brzinu padanja blokova
+                            </li>
+
+                            <li>
+                                U igri učestvuju samo odabrani blokovi
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="col-lg-6 ">
+                <div class="card bg-secondary bg-gradient">
+                    <div class="card-body">
+                        <h1>Podešavanja igre</h1>
+                            Težina:
+                            <input type="radio" id="lako" name="težina" checked> <label for="lako">Lako</label>
+                            <input type="radio" id="srednje" name="težina"> <label for="srednje">Srednje</label>
+                            <input type="radio" id="tesko" name="težina"> <label for="tesko">Teško</label> 
+
+                            <br>
+                            <h3>Blokovi:</h3>
+                            <table class="table text-center table-striped table-bordered">
+
+                                <tr>
+                                    <td><input type="checkbox" name="iblock" id="iblock"><img src="assets/iblock.png" alt="" height="15%" width="15%"></td>
+                                    <td><input type="checkbox" name="jblock" id="jblock"><img src="assets/jblock.png" alt="" height="35%" width="35%"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" name="lblock" id="lblock"><img src="assets/lblock.png" alt="" height="30%" width="30%"></td>
+                                    <td><input type="checkbox" name="oblock" id="oblock"><img src="assets/oblock.png" alt="" height="35%" width="35%"></td>   
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" name="sblock" id="sblock"><img src="assets/sblock.png" alt="" height="45%" width="45%"></td>
+                                    <td><input type="checkbox" name="tblock" id="tblock"><img src="assets/tblock.png" alt=""height="45%" width="45%"></td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2"><input type="checkbox" name="zblock" id="zblock"><img src="assets/zblock.png" alt="" height="25%" width="25%"></td>
+                                </tr>
+                                
+
+                                
+
+                            </table>
+                            <button onclick="ucitajParametre()" class="text-center btn btn-dark">Ucitaj parametre</button>
+
+
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
